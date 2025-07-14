@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pivô central</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-image: url('imagens/pivo-central.webp');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-position: center;
+      display: flex;
+      justify-content: center; /* Centraliza na horizontal */
+      align-items: center;     /* Centraliza na vertical */
+      
+    }
+
+    /* aplicar um fundo com transparência por cima */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.4); /* Branco com transparência */
+      z-index: -1;
+    }
+
+    div.dim{
+        display: inline-block;
+        border: 1px solid #285069 ;
+        border-radius: 20px;
+        background-color:  rgba(255, 255, 255, 0.37);
+        width: 350px;
+        height: 235px;
+        margin-right: 20px;
+        padding: 5px;
+    }
+
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+    }
+
+    div:hover{
+        background-color: rgba(255, 255, 255, 0.589);
+    }
+
+    .links{
+        text-align: center;
+        margin: 0px;
+        height: 20px;
+    }
+  </style>
+</head>
+<body>
+    
+    <div class="dim">
+        <h2>Dimensionamento do pivô central</h2>
+        <p>
+            Esta opção permite o dimensionamento hidráulico do pivô central pelo método trecho a trecho, fornecendo a carga de entrada da linha lateral e a vazão total do sistema.
+        </p>
+        <p class="links">
+            
+            <a href="x.html" rel="next"><img src="imagens/nextnew.png" alt=""></a>
+        
+        </p>
+        
+    </div>
+
+    <div class="dim">
+        <h2>Potencial de escoamento superficial</h2>
+        <p>
+            Nesta opção, a partir dos dados operacionais em um ponto específico da linha lateral e das informações sobre a textura do solo, é possível avaliar o risco de escoamento superficial.
+        </p>
+        <p class="links">
+            <a href="veri.html" rel="next"><img src="imagens/nextnew.png" alt=""></a>
+        </p>
+        
+    </div>
+
+</body>
+</html>

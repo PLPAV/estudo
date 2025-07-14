@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela com Scroll</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+    }
+
+    .tabela-container {
+      width: 80%;
+      height: 70vh;
+      border: 2px solid #000;
+      overflow: auto; /* Scroll horizontal e vertical */
+      background: white;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: max-content; /* Permite mais colunas sem quebrar */
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      min-width: 100px; /* Largura mínima para facilitar a leitura */
+      text-align: center;
+    }
+
+    th {
+      background: #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tabela-container">
+    <table>
+      <thead>
+        <tr>
+          <!-- Cria 30 colunas -->
+          <!-- Você pode usar JS ou backend para gerar isso dinamicamente -->
+          <!-- Aqui está em HTML puro -->
+          <script>
+            for (let i = 1; i <= 30; i++) {
+              document.write(`<th>Coluna ${i}</th>`);
+            }
+          </script>
+        </tr>
+      </thead>
+      <tbody>
+        <script>
+          for (let i = 1; i <= 300; i++) {
+            document.write('<tr>');
+            for (let j = 1; j <= 30; j++) {
+              document.write(`<td>L${i}C${j}</td>`);
+            }
+            document.write('</tr>');
+          }
+        </script>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

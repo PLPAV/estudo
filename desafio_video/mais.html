@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela dinâmica</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    .tabela-container {
+      width: 80%;
+      height: 300px;
+      overflow: auto;
+      border: 2px solid black;
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Adicionar Dados à Tabela</h2>
+
+  <form id="formulario">
+    <label>Nome: <input type="text" id="nome" required></label>
+    <label>Idade: <input type="number" id="idade" required></label>
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <div class="tabela-container">
+    <table id="tabela">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nome</th>
+          <th>Idade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Linhas serão adicionadas aqui -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const dados = []; // lista para armazenar os dados
+    const tabela = document.getElementById("tabela").querySelector("tbody");
+    const formulario = document.getElementById("formulario");
+
+    formulario.addEventListener("submit", function(event) {
+      event.preventDefault(); // impede recarregamento da página
+
+      const nome = document.getElementById("nome").value;
+      const idade = document.getElementById("idade").value;
+
+      // adiciona na lista
+      dados.push({ nome, idade });
+
+      // limpa a tabela
+      tabela.innerHTML = "";
+
+      // atualiza a tabela com todos os itens da lista
+      dados.forEach((item, index) => {
+        const linha = `<tr>
+          <td>${index + 1}</td>
+          <td>${item.nome}</td>
+          <td>${item.idade}</td>
+        </tr>`;
+        tabela.innerHTML += linha;
+      });
+
+      formulario.reset();
+    });
+  </script>
+
+</body>
+</html>

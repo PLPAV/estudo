@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação</title>
+    <link rel="shortcut icon" href="icone/bulb-icon.png" type="image/x-icon">
+    <style>
+
+        body {
+            background-color: lightgreen;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: rgb(23, 189, 23);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Página Verde</h1>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem_flexivel/paisagem-p.png" type="image/png">
+        <source media="(max-width:1250px )" srcset="imagem_flexivel/paisagem-m.png" type="image/png">
+        <img src="imagem_flexivel/paisagem-g.png" alt="">
+    </picture>
+
+    <ul style="color: rgb(23, 189, 23)">
+        <li>
+            <a href="index.html" rel="prev">Voltar a página inicial</a>
+        </li>
+    </ul>
+</body>
+</html>

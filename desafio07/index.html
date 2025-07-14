@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrigação</title>
+    <link rel="shortcut icon" href="imagens/earth-icon.png" type="image/x-icon">
+    <style>
+        
+
+        body{
+            background-color: #487407a9;
+        }
+
+        header{
+            color:#487307;
+             font-family:'Dancing Script', cursive;
+            background-image: linear-gradient(to bottom,#599DD9,#C9DFF2 );
+            height: 85px;
+            margin-top: -21px;
+            margin-left: -8px;
+            margin-right: -8px;
+            padding: 5px;
+        }
+
+        header > h1{
+            text-align: center;
+            padding-top: 12px;
+            padding: 0px;
+
+        }
+
+        header > p{
+            color: #487407 ;
+             font-family:'Dancing Script', cursive;
+            text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.76);
+        }
+        main{
+            text-align: center;
+            background-color:  white;
+            max-width: 800px;
+            min-height: 450px;
+            margin: auto;
+            padding: 2px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.459);
+        }
+
+        main img {
+        cursor: pointer;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        main img:hover {
+        transform: scale(0.95);
+        opacity: 0.8;
+        }
+
+        main> div.manejo{
+             font-family:'Dancing Script', cursive;
+            text-align: justify;
+            padding: 3px;
+            background-color: #C9DFF2;
+            margin-left: 5px;
+            margin-right: 5px; 
+            margin-top: 5px;
+            border-radius: 15px; 
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.459);
+                   
+        }
+
+        header> p{
+            text-align: center;
+            font-weight: bold;
+             font-family:'Dancing Script', cursive;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manejo da Irrigação</h1>
+    </header>
+
+    <main>
+
+        <div class="manejo">
+            <p>
+                O manejo da irrigação é essencial para a sustentabilidade da cultura e o aumento da produtividade.A água, sendo o principal insumo no processo produtivo e um recurso natural limitado, exige um manejo eficiente que atenda às necessidades hídricas da cultura sem causar impactos negativos ao meio ambiente.
+            </p>
+
+            <p>
+                Há maneiras de se fazer o manejo, são elas:
+                <ul id="tipos">
+                    <li><abbr title="Verificando a umidade do solo">Via solo</abbr></li>
+                    <li><abbr title="Vericando a evapotranpiração da culura">Via clima</abbr></li>
+                    <li><abbr title="Verificando através do fluxo de seiva ">Via cultura</abbr></li>
+                </ul>
+            </p>
+
+            <p>
+               Após conhecer a necessidade hídrica da cultura, o próximo passo é definir a forma mais eficiente de aplicar a água.A seguir, estão apresentados os métodos de irrigação mais utilizados atualmente, selecionados por sua eficiência e adequação a diferentes tipos de solo, clima e cultivo.
+            </p>
+
+
+        </div>
+        <p>
+            <a href="aspersor.html" rel="next">
+                <picture>
+                    <source media="(max-width:675px )" srcset="imagens/aspersor-pq.jpg">
+                    <img src="imagens/aspersor-320.jpg" alt="aspersor">
+                </picture>
+            </a>
+
+            <a href="#">
+                <picture>
+                    <source media="(max-width:675px)" srcset="imagens/localizada-pq.jpg">
+                    <img src="imagens/localizada-320.jpg" alt="localizada">
+                </picture>
+            </a>
+        </p>
+
+        <p>
+            <a href="#">
+                <picture>
+                    <source media="(max-width: 675px)" srcset="imagens/pivo-pq.jpg">
+                    <img src="imagens/pivo-320.jpg" alt="pivo">
+                </picture>
+            </a>
+
+            <a href="#">
+                <picture>
+                    <source media="(max-width:675px )" srcset="imagens/carretel-pq.jpg">
+                    <img src="imagens/carretel-320.jpg" alt="carretel">
+                </picture>
+            </a>
+        </p>
+    </main>
+
+</body>
+</html>
