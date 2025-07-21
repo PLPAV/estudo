@@ -17,7 +17,7 @@
             margin-right: -8px;
         }
         header > h1{
-            font-family:'Dancing Script', cursive;
+            font-family:'Times New Roman', Times, serif;
             color:#487307;
             text-align: center;
             padding: 15px;
@@ -32,10 +32,12 @@
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
         }
-
+        main>img{
+            text-align: center;
+        }
         h2{
             background-image: linear-gradient(to right, #aed9149d,#75a60a9f);
-            font-family: 'Dancing Script', cursive;
+            font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
             color: #599DD9;
             border-radius: 8px 8px 8px 8px;
@@ -43,17 +45,18 @@
         }
         .tipo{
             font-weight: bold;
-            font-family: 'Dancing Script', cursive;
+            font-family: 'Times New Roman', Times, serif;
         }
         .par{
-            font-family: 'Dancing Script', cursive;
+            font-family: 'Times New Roman', Times, serif;
             text-align: justify;
             text-indent: 10px;
         }
 
-        .tyu{
+        .centrar{
             text-align: center;
         }
+       
     </style>
 </head>
 <body>
@@ -74,14 +77,23 @@
                     <li class="tipo">Fixos Temporários</li>
                     <p class="par">Os componentes permanecem no campo durante o ciclo de cultivo, mas podem ser desmontados periodicamente entre os ciclos. A rede de tubulações cobre toda a área irrigada, permitindo uma boa eficiência, com flexibilidade moderada.</p>
                     <li class="tipo">Semi-Fixos</li>
-                    <p class="par">Nesse caso, o sistema de bombeamento, as linhas primárias e as de derivação são fixas — podendo ou não ser enterradas — enquanto as linhas laterais são móveis, equipadas com engates rápidos e deslocadas conforme a área a ser irrigada.</p>
+                    <p class="par">Nesse caso, o sistema de bombeamento, as linhas primárias e as de derivação são fixas podendo ou não ser enterradas enquanto as linhas laterais são móveis, equipadas com engates rápidos e deslocadas conforme a área a ser irrigada.</p>
                     <li class="tipo">Portáteis</li>
                     <p class="par">Todos os componentes do sistema, incluindo as tubulações, são móveis, o que permite grande flexibilidade na instalação e no uso. Em algumas situações, até mesmo o sistema de bombeamento é transportado junto com o restante do equipamento.</p>
                 </ul>
 
-                <p>
-                    <img src="imagens/componentesnew.PNG" alt="componentes aspersão convencional">
-                    <img src="imagens/sistemanew.PNG" alt="todos os componentes">
+                <p class="centrar">
+                    <picture>
+                        <source media="(max-width: 440px)" srcset="imagens/componentesp.PNG">
+                        <source media="(max-width: 740px)" srcset="imagens/componentesm.PNG">
+                        <img src="imagens/componentesnew.PNG" alt="componentes aspersão convencional">
+                    </picture>
+                
+                    <picture>
+                        <source media="(max-width: 440px)" srcset="imagens/sistemap.PNG">
+                        <source media="(max-width: 740px)" srcset="imagens/sistemam.PNG">
+                        <img src="imagens/sistemanew.PNG" alt="todos os componentes">
+                    </picture>
                 </p>
             </article>
 
@@ -93,7 +105,13 @@
                 <p class="par">São dispositivos que distribuem água em um setor circular ou semi-circular</p>
                 <p class="par">Os aspersores podem ser classificados segundo diferentes critérios. Em relação ao sistema de funcionamento, podem ser fixos, rotativos, de impacto ou de reação. Quanto à área de molhamento, podem operar em círculo cheio, de forma setorial, com reversão lenta ou com reversão rápida. De acordo com o ângulo do jato, classificam-se como tradicionais, com ângulos entre 27° e 33°, ou sub-copa, com ângulos entre 0° e 6°. Considerando o número de bocais, existem aspersores com um bocal, dois bocais ou mais de dois bocais  sendo essa última configuração pouco comum. Em relação à pressão de serviço, são classificados como de muito baixa pressão (entre 4 e 10 metros de coluna d’água), baixa (10 a 20 mca), média (20 a 40 mca) ou alta pressão (acima de 40 mca). Quanto ao alcance do jato, podem ser de curto alcance (até 12 metros), médio alcance (de 12 a 20 metros) ou longo alcance (acima de 20 metros). Por fim, quanto à vazão, os aspersores podem ser de baixa vazão (até 5 m³/h), média vazão (de 5 a 20 m³/h), alta vazão (de 20 a 50 m³/h) ou do tipo canhão, quando possuem vazão superior a 50 m³/h.</p>
 
-                <p class="tyu"><img src="imagens/emissoresnew.PNG" alt="fabricantes de emissores e emissores"></p>
+                <p class="centrar">
+                    <picture>
+                        <source media="(max-width: 540px)" srcset="imagens/emissoresp.PNG">
+                        <source media="(max-width: 840px)" srcset="imagens/emissoresm.PNG">
+                        <img src="imagens/emissoresnew.PNG" alt="fabricantes de emissores e emissores">
+                    </picture>
+                </p>
 
             </article>
         </section>
